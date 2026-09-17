@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pydatamatch"
+version = "0.1.0"
+description = "Match point observations to ocean model and satellite fields in space and time, starting with Copernicus Marine"
+readme = "README.md"
+license = "MIT"
+authors = [
+  { name = "Camille Ross", email = "camille.ross@maine.edu" },
+]
+requires-python = ">=3.10"
+dependencies = [
+  "copernicusmarine>=2.0",
+  "xarray>=2023.1",
+  "netcdf4",
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "scipy>=1.10",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Oceanography",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.urls]
+Repository = "https://github.com/chross22/pydatamatch"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pydatamatch"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
