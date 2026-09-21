@@ -36,8 +36,9 @@ name is an error naming the candidates.
 pip install git+https://github.com/chross22/pydatamatch
 ```
 
-Copernicus downloads need a (free) Copernicus Marine account. Log in once and
-the credentials are stored:
+Some Copernicus datasets may require a (free) Copernicus Marine account;
+others download without one. If a fetch asks for credentials, log in once
+and they are stored:
 
 ```bash
 copernicusmarine login
