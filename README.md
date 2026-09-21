@@ -1,5 +1,7 @@
 # pydatamatch
 
+[![CI](https://github.com/chross22/pydatamatch/actions/workflows/ci.yml/badge.svg)](https://github.com/chross22/pydatamatch/actions/workflows/ci.yml)
+
 Match point observations to ocean model and satellite fields in space and
 time. The Python counterpart of the R package
 [datamatch](https://github.com/chross22/datamatch), starting with the
